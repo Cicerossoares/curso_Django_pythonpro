@@ -46,3 +46,7 @@ jobs:
         CODECOV_TOKEN: f4416866-2a24-4289-819e-a481c5b36135
       run: |
         pipenv run codecov
+    - name: Codecov
+      uses:
+          codecov/codecov-action@v2.1.0
+
