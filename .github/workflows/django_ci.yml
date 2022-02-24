@@ -42,8 +42,7 @@ jobs:
     - name: Codecov
       uses:
           codecov/codecov-action@v2.1.0
-    - name: Posting Coverage
-      env:
-        CODECOV_TOKEN: "f4416866-2a24-4289-819e-a481c5b36135"
+    - with:
+        token: "f4416866-2a24-4289-819e-a481c5b36135"
       run: |
         pipenv run codecov
